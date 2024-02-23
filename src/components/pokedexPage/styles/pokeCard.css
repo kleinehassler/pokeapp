@@ -1,0 +1,151 @@
+.poke__card{
+    background-color: orange; 
+    border: 5px solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.poke__card:hover {
+    transform: scale(1.1);
+}
+
+.poke__card div {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    opacity: 20%;
+
+}
+
+.poke__card figure{
+    position: relative;
+    width: 150px;
+    z-index: 10;
+
+}
+
+.poke__types {
+    display: flex;
+    gap:  5px;
+}
+
+.poke__card hr {
+    width: 90%;
+}
+
+.poke__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 15px;
+    width: 85%;
+}
+
+.poke__stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.slot2::before {
+    content: '/ ';
+}
+
+/* -- colores dimanicos--*/
+
+.grass {
+    background-color: green;
+    opacity: 20%;
+}
+
+.fire {
+    background-color: red;
+    opacity: 20%;
+}
+
+.water {
+    background-color: blue;
+    opacity: 20%;
+}
+
+.normal {
+    background-color: aquamarine;
+    opacity: 20%;
+}
+
+.fighting{
+    background-color: yellowgreen;
+    opacity: 20%;
+}
+
+/*
+0
+: 
+{name: 'normal', url: 'https://pokeapi.co/api/v2/type/1/'}
+1
+: 
+{name: 'fighting', url: 'https://pokeapi.co/api/v2/type/2/'}
+2
+: 
+{name: 'flying', url: 'https://pokeapi.co/api/v2/type/3/'}
+3
+: 
+{name: 'poison', url: 'https://pokeapi.co/api/v2/type/4/'}
+4
+: 
+{name: 'ground', url: 'https://pokeapi.co/api/v2/type/5/'}
+5
+: 
+{name: 'rock', url: 'https://pokeapi.co/api/v2/type/6/'}
+6
+: 
+{name: 'bug', url: 'https://pokeapi.co/api/v2/type/7/'}
+7
+: 
+{name: 'ghost', url: 'https://pokeapi.co/api/v2/type/8/'}
+8
+: 
+{name: 'steel', url: 'https://pokeapi.co/api/v2/type/9/'}
+9
+: 
+{name: 'fire', url: 'https://pokeapi.co/api/v2/type/10/'}
+10
+: 
+{name: 'water', url: 'https://pokeapi.co/api/v2/type/11/'}
+11
+: 
+{name: 'grass', url: 'https://pokeapi.co/api/v2/type/12/'}
+12
+: 
+{name: 'electric', url: 'https://pokeapi.co/api/v2/type/13/'}
+13
+: 
+{name: 'psychic', url: 'https://pokeapi.co/api/v2/type/14/'}
+14
+: 
+{name: 'ice', url: 'https://pokeapi.co/api/v2/type/15/'}
+15
+: 
+{name: 'dragon', url: 'https://pokeapi.co/api/v2/type/16/'}
+16
+: 
+{name: 'dark', url: 'https://pokeapi.co/api/v2/type/17/'}
+17
+: 
+{name: 'fairy', url: 'https://pokeapi.co/api/v2/type/18/'}
+18
+: 
+{name: 'unknown', url: 'https://pokeapi.co/api/v2/type/10001/'}
+19
+: 
+{name: 'shadow
+*/
+
