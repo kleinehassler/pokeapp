@@ -5,7 +5,7 @@ const HeaderPage = () => {
   return (
     <div>
         <Link to="/pokedex">
-          <img src="../public/assets/headerpage.png" alt="header page" style={{ cursor: 'pointer' }}/>
+          <img src="./assets/headerpage.png" alt="header page" style={{ cursor: 'pointer' }}/>
         </Link>
     </div>
   )
