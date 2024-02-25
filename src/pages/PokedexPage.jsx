@@ -5,6 +5,7 @@ import useFetch from '../hooks/useFetch';
 import PokeCard from '../components/pokedexPage/PokeCard';
 import SelectType from '../components/pokedexPage/SelectType';
 import './styles/pokedexPage.css';
+import HeaderPage from '../components/shared/HeaderPage';
 
 const PokedexPage = () => {
 
@@ -16,7 +17,7 @@ const PokedexPage = () => {
   
   useEffect(() => {
     if (selectValue === 'allPokemons'){
-      const url = "https://pokeapi.co/api/v2/pokemon/?limit=100";
+      const url = "https://pokeapi.co/api/v2/pokemon/?limit=500";
       getPokemons(url);
     } else  {
       getPerType(selectValue);
@@ -33,19 +34,16 @@ const PokedexPage = () => {
   const cbFilter = () => {
     if (pokemonName) {
       return pokemons?.results.filter(element => element.name.includes(pokemonName));
-      //return pokemons?.results.includes(pokemonName);
     } else {
       return pokemons?.results; 
     }
   }
-
-//  console.log(setSelectValue);
-  
  return (
     <div>
+      <HeaderPage />
       <section className='poke__header'>
         <h3><span>Bienvenido {trainerName},</span> Aqui podras encontrar a tu Pokemon Favorito</h3>
-        <div>
+        <div className='poke_search'>
           <form onSubmit={handleSubmit}>
             <input type="text" ref={textInput} />
             <button>Buscar</button>
@@ -57,7 +55,6 @@ const PokedexPage = () => {
       </section>
       <section className='poke__container'>
         {
-          //pokemons?.results.map(poke => (
           cbFilter()?.map(poke => (
             <PokeCard 
               key={poke.url}

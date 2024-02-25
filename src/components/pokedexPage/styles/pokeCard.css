@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 5px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
     gap: 5px;
     cursor: pointer;
@@ -63,28 +65,89 @@
 
 .grass {
     background-color: green;
-    opacity: 20%;
+    opacity: 5%;
 }
 
 .fire {
     background-color: red;
-    opacity: 20%;
+    opacity: 5%;
 }
 
 .water {
     background-color: blue;
-    opacity: 20%;
+    opacity: 5%;
 }
 
 .normal {
     background-color: aquamarine;
-    opacity: 20%;
+    opacity: 5%;
 }
 
 .fighting{
-    background-color: yellowgreen;
-    opacity: 20%;
+    background-color: lightsalmon;
+    opacity: 5%;
 }
+
+.poison{
+    background-color: rgb(241, 23, 161);
+    opacity: 5%;
+}
+
+.ground{
+    background-color: brown;
+    opacity: 5%;
+}
+
+.rock{
+    background-color: gray;
+    opacity: 5%;
+}
+
+.flying{    
+    background-color: lightskyblue;
+    opacity: 5%;
+}
+
+.bug{
+    background-color: greenyellow;
+    opacity: 5%;
+}
+
+.ghost{
+    background-color: ghostwhite;
+    opacity: 5%;
+}
+
+.steel{
+    background-color: steelblue;
+    opacity: 5%;
+}
+.electric{
+    background-color: burlywood;
+    opacity: 5%;
+}
+
+.psychic{
+    background-color: ivory;
+    opacity: 5%;
+}
+
+.dragon{
+    background-color: darkgray;
+    opacity: 5%;
+}
+
+.unknown{
+    background-color: darkmagenta;
+    opacity: 5%;
+}
+
+.shadow{
+    background-color: seashell;
+    opacity: 5%;
+}
+
+
 
 /*
 0

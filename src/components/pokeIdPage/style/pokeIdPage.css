@@ -1,0 +1,113 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    font-family: Arial, sans-serif;
+    align-content: center;
+  }
+
+  .poke1__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 600px;
+    border: 5px solid black;
+    border-radius: 25px;
+    object-fit: cover;
+    gap: 25px;
+    cursor: pointer;
+    position: relative;    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .poke1__name{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 80px;
+    background-color: rgb(255, 0, 25);
+    width: 100vh;
+    border: 2px solid black;
+    border-radius: 25px;
+  }
+  
+.poke1_data1{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+
+.ul__type{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.stats__title {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  font-size: 20px;
+  justify-content: space-evenly;
+}
+
+.poke1__statscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stat-bar {
+  display: flex;
+  align-content: center;
+  width: 100px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.stat-bar .background {
+  height: 100%;
+  background-color: #ddd;
+}
+
+.stat-bar .fill {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.5s ease-in-out;
+}
+
+.poke1_stat_data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attack {
+  background-color: blue;
+}
+
+.defense {
+  background-color: green;
+}
+
+.hp {
+  background-color: yellow;
+}
+
+.speed {
+  background-color: purple;
+}
