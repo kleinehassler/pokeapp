@@ -3,6 +3,8 @@ import { useState } from "react";
 
 const useFetch = () => {
     const [ apiData, setApiData ]= useState();
+    const [currentPage, setCurrentPage] = useState(1);
+
     const getApi = (url) => {
         axios.get(url)
             .then(res => setApiData(res.data))
@@ -18,7 +20,11 @@ const useFetch = () => {
             })
             .catch(err => console.log(err));
     }
-    return [ apiData, getApi, getApiType ];
+    const setPage = (page) => {
+        setCurrentPage(page);
+    }
+
+    return [ apiData, getApi, getApiType, currentPage, setPage ];
 
 }
 
